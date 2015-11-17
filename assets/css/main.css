@@ -90,6 +90,10 @@
 		}
 
 	body {
+		background-image: url("../../images/bg01.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -102,7 +106,6 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-color: #000;
 		padding: 6em 4em 4em 4em;
 	}
 
@@ -145,148 +148,6 @@
 			}
 
 		}
-
-/* BG */
-
-	#bg {
-		-moz-transition: opacity 2s ease-in-out;
-		-webkit-transition: opacity 2s ease-in-out;
-		-ms-transition: opacity 2s ease-in-out;
-		transition: opacity 2s ease-in-out;
-		height: 100%;
-		left: 0;
-		opacity: 0.25;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 1;
-	}
-
-		#bg div {
-			-moz-transition: opacity 3s ease, visibility 3s;
-			-webkit-transition: opacity 3s ease, visibility 3s;
-			-ms-transition: opacity 3s ease, visibility 3s;
-			transition: opacity 3s ease, visibility 3s;
-			background-size: cover;
-			height: 100%;
-			left: 0;
-			opacity: 0;
-			position: absolute;
-			top: 0;
-			visibility: hidden;
-			width: 150%;
-		}
-
-			#bg div.visible {
-				-moz-animation: bg 45s linear infinite;
-				-webkit-animation: bg 45s linear infinite;
-				-ms-animation: bg 45s linear infinite;
-				animation: bg 45s linear infinite;
-				opacity: 1;
-				visibility: visible;
-				z-index: 1;
-			}
-
-				#bg div.visible.top {
-					z-index: 2;
-				}
-
-				@media screen and (max-width: 1280px) {
-
-					#bg div.visible {
-						-moz-animation: bg 29.25s linear infinite;
-						-webkit-animation: bg 29.25s linear infinite;
-						-ms-animation: bg 29.25s linear infinite;
-						animation: bg 29.25s linear infinite;
-					}
-
-				}
-
-				@media screen and (max-width: 736px) {
-
-					#bg div.visible {
-						-moz-animation: bg 18s linear infinite;
-						-webkit-animation: bg 18s linear infinite;
-						-ms-animation: bg 18s linear infinite;
-						animation: bg 18s linear infinite;
-					}
-
-				}
-
-			#bg div:only-child {
-				-moz-animation-direction: alternate !important;
-				-webkit-animation-direction: alternate !important;
-				-ms-animation-direction: alternate !important;
-				animation-direction: alternate !important;
-			}
-
-		body.is-loading #bg {
-			opacity: 0;
-		}
-
-	@-moz-keyframes bg {
-		0% {
-			-moz-transform: translateX(0);
-			-webkit-transform: translateX(0);
-			-ms-transform: translateX(0);
-			transform: translateX(0);
-		}
-
-		100% {
-			-moz-transform: translateX(-25%);
-			-webkit-transform: translateX(-25%);
-			-ms-transform: translateX(-25%);
-			transform: translateX(-25%);
-		}
-	}
-
-	@-webkit-keyframes bg {
-		0% {
-			-moz-transform: translateX(0);
-			-webkit-transform: translateX(0);
-			-ms-transform: translateX(0);
-			transform: translateX(0);
-		}
-
-		100% {
-			-moz-transform: translateX(-25%);
-			-webkit-transform: translateX(-25%);
-			-ms-transform: translateX(-25%);
-			transform: translateX(-25%);
-		}
-	}
-
-	@-ms-keyframes bg {
-		0% {
-			-moz-transform: translateX(0);
-			-webkit-transform: translateX(0);
-			-ms-transform: translateX(0);
-			transform: translateX(0);
-		}
-
-		100% {
-			-moz-transform: translateX(-25%);
-			-webkit-transform: translateX(-25%);
-			-ms-transform: translateX(-25%);
-			transform: translateX(-25%);
-		}
-	}
-
-	@keyframes bg {
-		0% {
-			-moz-transform: translateX(0);
-			-webkit-transform: translateX(0);
-			-ms-transform: translateX(0);
-			transform: translateX(0);
-		}
-
-		100% {
-			-moz-transform: translateX(-25%);
-			-webkit-transform: translateX(-25%);
-			-ms-transform: translateX(-25%);
-			transform: translateX(-25%);
-		}
-	}
 
 /* Type */
 
@@ -345,18 +206,18 @@
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		border-bottom: dotted 1px rgba(255, 255, 255, 0.25);
-		color: #1cb495;
+		color: #094074;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #1cb495 !important;
+			color: #094074 !important;
 			text-decoration: none;
 		}
 
 	strong, b {
-		color: #fff;
+		color: #094074;
 		font-weight: 700;
 	}
 
@@ -369,7 +230,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #fff;
+		color: #094074;
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -470,7 +331,7 @@
 	}
 
 	header p {
-		color: rgba(255, 255, 255, 0.5);
+		color: #094074;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -628,7 +489,7 @@
 			}
 
 			form .message.success {
-				color: #1cb495;
+				color: #094074;
 			}
 
 				form .message.success:before {
@@ -790,7 +651,7 @@
 			-ms-animation: focus 0.1s;
 			animation: focus 0.1s;
 			background-color: rgba(255, 255, 255, 0.125);
-			border-color: #1cb495;
+			border-color: #094074;
 		}
 
 	.select-wrapper {
@@ -892,16 +753,16 @@
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #1cb495;
-			border-color: #1cb495;
-			color: #ffffff;
+			background: #fe9000;
+			border-color: #fe9000;
+			color: #fe9000;
 			content: '\f00c';
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #1cb495;
-			box-shadow: 0 0 0 2px #1cb495;
+			border-color: #fe9000;
+			box-shadow: 0 0 0 2px #fe9000;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -952,7 +813,7 @@
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-		background-color: #1cb495;
+		background-color: #fe9000;
 		border-radius: 6px;
 		border: 0;
 		color: #ffffff !important;
@@ -1105,10 +966,9 @@
 		-webkit-transition: opacity 0.5s ease-in-out;
 		-ms-transition: opacity 0.5s ease-in-out;
 		transition: opacity 0.5s ease-in-out;
-		bottom: 4em;
-		color: rgba(255, 255, 255, 0.5);
+		bottom: 12em;
+		color: #fe9000;
 		left: 4em;
-		opacity: 0.5;
 		position: absolute;
 	}
 
@@ -1117,13 +977,13 @@
 		}
 
 		#footer .copyright {
-			font-size: 0.8em;
+			font-size: 1em;
 			list-style: none;
 			padding: 0;
 		}
 
 			#footer .copyright li {
-				border-left: solid 1px rgba(255, 255, 255, 0.25);
+				border-left: solid 1px #fe9000;
 				display: inline-block;
 				line-height: 1em;
 				margin: 0 0 0 0.75em;
@@ -1151,7 +1011,7 @@
 		@media screen and (max-width: 1680px) {
 
 			#footer {
-				bottom: 3.5em;
+				bottom: 18em;
 				left: 3.5em;
 			}
 
