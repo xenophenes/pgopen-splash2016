@@ -90,10 +90,11 @@
 		}
 
 	body {
-		background-image: url("../../images/bg01.png");
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: cover;
+		background: url("../../images/bg01.svg") no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -106,7 +107,7 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		padding: 6em 4em 4em 4em;
+		padding: 0 4em 4em 4em;
 	}
 
 		body > * {
@@ -128,7 +129,7 @@
 		@media screen and (max-width: 1680px) {
 
 			body {
-				padding: 6em 3.5em 3.5em 3.5em;
+				padding: 0 3.5em 3.5em 3.5em;
 			}
 
 		}
@@ -136,7 +137,7 @@
 		@media screen and (max-width: 736px) {
 
 			body {
-				padding: 5em 2em 2em 2em;
+				padding: 0 2em 2em 2em;
 			}
 
 		}
@@ -144,7 +145,7 @@
 		@media screen and (max-width: 360px) {
 
 			body {
-				padding: 5em 1.25em 1.25em 1.25em;
+				padding: 0 1.25em 1.25em 1.25em;
 			}
 
 		}
@@ -230,7 +231,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #094074;
+		color: #000;
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -331,7 +332,7 @@
 	}
 
 	header p {
-		color: #094074;
+		color: #000;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -871,11 +872,13 @@
 /* Header */
 
 	#header h1 {
+		text-align: center;
 		font-size: 3.25em;
 		margin: 0 0 0.55em 0;
 	}
 
 	#header p {
+		text-align: center;
 		font-size: 1.35em;
 		line-height: 1.65em;
 	}
@@ -887,10 +890,12 @@
 	@media screen and (max-width: 736px) {
 
 		#header h1 {
+			text-align: center;
 			font-size: 2em;
 		}
 
 		#header p {
+			text-align: center;
 			font-size: 1em;
 		}
 
@@ -899,6 +904,7 @@
 	@media screen and (max-width: 480px) {
 
 		#header {
+			text-align: center;
 			margin: 0 0 1em 0;
 		}
 
@@ -962,14 +968,14 @@
 /* Footer */
 
 	#footer {
+		text-align: center;
 		-moz-transition: opacity 0.5s ease-in-out;
 		-webkit-transition: opacity 0.5s ease-in-out;
 		-ms-transition: opacity 0.5s ease-in-out;
 		transition: opacity 0.5s ease-in-out;
-		bottom: 12em;
 		color: #fe9000;
-		left: 4em;
-		position: absolute;
+		position: relative;
+		width: 100%;
 	}
 
 		#footer .icons {
@@ -1011,7 +1017,7 @@
 		@media screen and (max-width: 1680px) {
 
 			#footer {
-				bottom: 18em;
+				bottom: 2em;
 				left: 3.5em;
 			}
 
@@ -1020,6 +1026,7 @@
 		@media screen and (max-width: 736px) {
 
 			#footer {
+				text-align: center;
 				bottom: 2em;
 				left: 2em;
 			}
@@ -1029,6 +1036,7 @@
 		@media screen and (max-width: 360px) {
 
 			#footer {
+				text-align: center;
 				bottom: 1.25em;
 				left: 1.25em;
 			}
@@ -1038,9 +1046,9 @@
 		@media screen and (max-height: 640px) {
 
 			#footer {
-				bottom: auto;
+				text-align: center;
+				bottom: -1em;
 				left: auto;
-				margin: 1em 0 0 0;
 				position: relative;
 			}
 
