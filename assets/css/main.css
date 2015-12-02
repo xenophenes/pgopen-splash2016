@@ -90,11 +90,6 @@
 		}
 
 	body {
-		background: url("../../images/bg01.svg") no-repeat center center fixed;
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -108,6 +103,25 @@
 		-ms-justify-content: center;
 		justify-content: center;
 		padding: 0 4em 4em 4em;
+	}
+
+	#block {
+		background: url("../../images/bg01.svg") no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  filter: alpha(opacity=60);
+	  /* IE */
+	  -moz-opacity: 0.6;
+	  /* Mozilla */
+	  opacity: 0.6;
+	  /* CSS3 */
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
 	}
 
 		body > * {
@@ -334,7 +348,7 @@
 	header p {
 		color: #000;
 		position: relative;
-		margin: 0 0 1.5em 0;
+		margin: 0 0 6em 0;
 	}
 
 	header h2 + p {
@@ -874,7 +888,7 @@
 	#header h1 {
 		text-align: center;
 		font-size: 3.25em;
-		margin: 0 0 0.55em 0;
+		margin: 0 0 1em 0;
 	}
 
 	#header p {
@@ -1018,7 +1032,6 @@
 
 			#footer {
 				bottom: 2em;
-				left: 3.5em;
 			}
 
 		}
@@ -1028,7 +1041,6 @@
 			#footer {
 				text-align: center;
 				bottom: 2em;
-				left: 2em;
 			}
 
 		}
