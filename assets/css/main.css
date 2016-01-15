@@ -650,6 +650,13 @@
 			  text-transform: uppercase;
 			}
 
+			.disclosure {
+				color: #66C1E8;
+				font-size: 15px;
+				text-align: center;
+				text-transform: uppercase;
+			}
+
 			@media screen and (max-width: 736px) {
 
 				.texto {
