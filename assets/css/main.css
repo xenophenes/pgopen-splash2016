@@ -624,7 +624,7 @@
 			  -webkit-transition:.5s;
 			  transition:.5s;
 				background-color: #66C1E8;
-				color: #fff;
+				color: #000;
 				font-weight: bold;
 				text-align: center;
 				text-transform: uppercase;
@@ -639,7 +639,7 @@
 			  -webkit-transition:.5s;
 			  transition:.5s;
 				background-color: #fe9000;
-			  color: #fff;
+			  color: #000;
 			}
 
 			.texto {
