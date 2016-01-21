@@ -575,9 +575,8 @@
 				position: relative;
 				width: 100%;
 				height: 100%;
-				margin: 4em 0 0 0;
+				margin: 1em 0 0 0;
 				background: #000;
-				overflow: hidden;
 			}
 
 			[class*="fontawesome-"]:before {
@@ -609,14 +608,6 @@
 				outline: none;
 			}
 
-			.Registro input[type="text"] {
-				background-color: #fff;
-				color: #000;
-				width: 240px;
-				padding: 0 10px;
-				float: left;
-			}
-
 			.Registro input[type="submit"] {
 			  -o-transition:.5s;
 			  -ms-transition:.5s;
@@ -629,7 +620,6 @@
 				text-align: center;
 				text-transform: uppercase;
 				width: 240px;
-				float: right;
 			}
 
 			.Registro input[type="submit"]:hover {
@@ -669,7 +659,6 @@
 
 				.Registro {
 					width: 100%;
-					height: 100%;
 					margin: 0 0 .1em  0;
 					padding: 0 .5em;
 				}
@@ -687,7 +676,6 @@
 			@media screen and (max-height: 640px) {
 				.Registro {
 					width: 100%;
-					height: 100%;
 					margin: 0 0 .1em  0;
 					padding: 0 .5em;
 				}
