@@ -663,7 +663,6 @@
 
 				.Registro {
 					width: 100%;
-					height: 20px;
 					margin: 0 0 .1em  0;
 					padding: 0 .5em;
 				}
@@ -682,12 +681,16 @@
 			@media screen and (max-height: 640px) {
 				.Registro {
 					width: 100%;
-					height: 20px;
 					margin: 0 0 .1em  0;
 					padding: 0 .5em;
 				}
 
 				.Registro input[type="submit"] {
 					padding: 0 1em 0 1em;
+
+					#block {
+						height: 80%;
+						width: 80%;
+					}
 				}
 			}
