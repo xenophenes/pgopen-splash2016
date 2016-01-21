@@ -670,16 +670,12 @@
 				.Registro {
 					width: 100%;
 					height: 100%;
-					margin: 0 0 1em 0;
+					margin: 0 0 .1em  0;
 					padding: 0 .5em;
 				}
 
-				.Registro input[type="text"] {
-					width: 50%;
-				}
-
 				.Registro input[type="submit"] {
-				  width: 50%;
+				  width: 100%;
 				}
 
 				.texto {
@@ -689,6 +685,10 @@
 			}
 
 			@media screen and (max-height: 640px) {
-
-
+				.Registro {
+					width: 100%;
+					height: 100%;
+					margin: 0 0 .1em  0;
+					padding: 0 .5em;
+				}
 			}
