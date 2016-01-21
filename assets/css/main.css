@@ -153,7 +153,7 @@
 
 		@media screen and (max-width: 1680px) {
 
-			body, input, select, textarea {
+			body, input, select, textarea, a {
 				font-size: 12pt;
 			}
 
@@ -161,7 +161,7 @@
 
 		@media screen and (max-width: 1280px) {
 
-			body, input, select, textarea {
+			body, input, select, textarea, a {
 				font-size: 11pt;
 			}
 
@@ -169,7 +169,7 @@
 
 		@media screen and (max-width: 980px) {
 
-			body, input, select, textarea {
+			body, input, select, textarea, a {
 				font-size: 12pt;
 			}
 
@@ -177,7 +177,7 @@
 
 		@media screen and (max-width: 736px) {
 
-			body, input, select, textarea {
+			body, input, select, textarea, a {
 				font-size: 12pt;
 			}
 
@@ -185,7 +185,7 @@
 
 		@media screen and (max-width: 480px) {
 
-			body, input, select, textarea {
+			body, input, select, textarea, a {
 				font-size: 12pt;
 			}
 
@@ -203,7 +203,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #fe9000 !important;
+			color: #fe9000;
 			text-decoration: none;
 		}
 
@@ -586,14 +586,6 @@
 			  font-family: 'FontAwesome', sans-serif;
 			}
 
-			input {
-				font-size: 1em;
-				line-height: 1.5em;
-				margin: 0;
-				padding: 0;
-				-webkit-appearance: none;
-			}
-
 			.Registro {
 			  display: inline-block;
 			}
@@ -605,13 +597,19 @@
 				width: 36px;
 			}
 
-			.Registro input {
+			.reg-button {
+				font-size: 1em;
+				line-height: 1.5em;
+				margin: 0;
+				padding: 1em 1.5em 1em 1.5em;
+				-webkit-appearance: none;
 				border: none;
 				height: 50px;
+				width: 300px;
 				outline: none;
 			}
 
-			.Registro input[type="submit"] {
+			.reg-button {
 			  -o-transition:.5s;
 			  -ms-transition:.5s;
 			  -moz-transition:.5s;
@@ -625,7 +623,7 @@
 				width: 240px;
 			}
 
-			.Registro input[type="submit"]:hover {
+			.Registro .reg-button:hover {
 			  -o-transition:.5s;
 			  -ms-transition:.5s;
 			  -moz-transition:.5s;
@@ -667,7 +665,7 @@
 					padding: 0 .5em;
 				}
 
-				.Registro input[type;="submit"] {
+				.reg-button {
 				  width: 100%;
 					padding: 0 1em 0 1em;
 				}
@@ -685,7 +683,7 @@
 					padding: 0 .5em;
 				}
 
-				.Registro input[type="submit"] {
-					padding: 0 1em 0 1em;
+				.reg-button {
+					padding: 1em 2em 1em 2em;
 				}
 			}
