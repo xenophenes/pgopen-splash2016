@@ -116,7 +116,7 @@
 	  /* Mozilla */
 	  opacity: 0.6;
 	  /* CSS3 */
-	  position: absolute;
+	  position: fixed; 
 	  top: 0;
 	  left: 0;
 	  height: 100%;
@@ -687,10 +687,5 @@
 
 				.Registro input[type="submit"] {
 					padding: 0 1em 0 1em;
-
-					#block {
-						height: 80%;
-						width: 80%;
-					}
 				}
 			}
