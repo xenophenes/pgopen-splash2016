@@ -466,6 +466,7 @@
 		#header p {
 			text-align: center;
 			font-size: 1em;
+			padding: 0 1em 0 1em;
 		}
 
 	}
@@ -475,6 +476,7 @@
 		#header {
 			text-align: center;
 			margin: 0 0 1em 0;
+			padding: 0 1em 0 1em;
 		}
 
 	}
@@ -502,7 +504,7 @@
 		#footer .copyright {
 			font-size: 1em;
 			list-style: none;
-			padding: 0;
+			padding: 0 1em 0 1em;
 		}
 
 			#footer .copyright li {
@@ -646,6 +648,8 @@
 				font-size: 15px;
 				text-align: center;
 				text-transform: uppercase;
+
+					margin: 3em 1em 2em 1em;
 			}
 
 			@media screen and (max-width: 736px) {
