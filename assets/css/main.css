@@ -576,7 +576,7 @@
 				line-height: 1.5em;
 				position: relative;
 				width: 100%;
-				height: 50em;
+				height: 48em;
 				margin: 1em 0 0 0;
 				padding: 1em 0;
 				background: #000;
@@ -648,8 +648,7 @@
 				font-size: 15px;
 				text-align: center;
 				text-transform: uppercase;
-
-					margin: 3em 1em 2em 1em;
+				margin: 3em 1em 2em 1em;
 			}
 
 			@media screen and (max-width: 736px) {
@@ -668,8 +667,9 @@
 					padding: 0 .5em;
 				}
 
-				.Registro input[type="submit"] {
+				.Registro input[type;="submit"] {
 				  width: 100%;
+					padding: 0 1em 0 1em;
 				}
 
 				.texto {
@@ -683,5 +683,9 @@
 					width: 100%;
 					margin: 0 0 .1em  0;
 					padding: 0 .5em;
+				}
+
+				.Registro input[type="submit"] {
+					padding: 0 1em 0 1em;
 				}
 			}
